@@ -1,0 +1,77 @@
+.banner {
+    position: relative; /* Make the banner a positioning context */
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Overlay effect */
+.banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent overlay */
+    z-index: 1; /* Ensure the overlay is above the image */
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 80px; /* Adjust as needed */
+    font-weight: bold;
+    z-index: 2; /* Ensure the text is above the overlay */
+    text-align: center;
+}
+
+/* For Laptop, PC */
+@media screen and (min-width: 992px) { 
+    .navbar-nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .container-fluid{
+        width: 60%;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1030; /* Ensure the navbar stays above other content */
+    }
+}
+
+/* For mobiles */
+@media screen and (max-width: 991px) {
+    .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1030; /* Ensure the navbar stays above other content */
+    }
+
+    .banner-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 30px; /* Adjust as needed */
+        font-weight: bold;
+        z-index: 2; /* Ensure the text is above the overlay */
+        text-align: center;
+    }
+}
+
+
+
