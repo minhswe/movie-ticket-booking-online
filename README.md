@@ -1,5 +1,5 @@
 # Preface
-I just have finished some courses that relate to website technology in my university so I make this project to pratice and cover my knowledge
+I just have finished some courses that relate to website technology at my university so I made this project to practice and cover my knowledge
 # Contents
 ## Domain model
 In software engineering, a domain model is a conceptual model of the domain that incorporates both behavior and data. In ontology engineering, a domain model is a formal representation of a knowledge domain with concepts, roles, datatypes, individuals, and rules, typically grounded in a description logic.
